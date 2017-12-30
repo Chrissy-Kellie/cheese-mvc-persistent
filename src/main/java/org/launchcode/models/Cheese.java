@@ -1,7 +1,5 @@
 package org.launchcode.models;
 
-import org.launchcode.models.data.Category;
-
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -36,6 +34,7 @@ public class Cheese {
     public Cheese(String name, String description) {
         this.name = name;
         this.description = description;
+
     }
 
     public Cheese() { }

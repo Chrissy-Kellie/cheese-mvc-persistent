@@ -40,7 +40,8 @@ public class MenuController {
     }
 
     @RequestMapping(value = "add", method = RequestMethod.POST)
-    public String add(Model model, @ModelAttribute @Valid Menu menu, Errors errors) {
+    public String add(Model model, @ModelAttribute @Valid Menu menu,
+                      Errors errors) {
         if(errors.hasErrors()) {
             model.addAttribute("title", "Add Menu");
             return "menu/add";
